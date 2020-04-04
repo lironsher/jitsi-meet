@@ -31,7 +31,7 @@ import com.facebook.react.devsupport.DevInternalSettings;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.soloader.SoLoader;
-
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.oney.WebRTCModule.RTCVideoViewManager;
 import com.oney.WebRTCModule.WebRTCModule;
 
@@ -186,7 +186,7 @@ class ReactInstanceManagerHolder {
         List<ReactPackage> packages
             = new ArrayList<>(Arrays.asList(
                 new com.BV.LinearGradient.LinearGradientPackage(),
-                new com.calendarevents.CalendarEventsPackage(),
+               // new com.calendarevents.CalendarEventsPackage(),
                 new com.corbt.keepawake.KCKeepAwakePackage(),
                 new com.facebook.react.shell.MainReactPackage(),
                 new com.horcrux.svg.SvgPackage(),
@@ -196,6 +196,8 @@ class ReactInstanceManagerHolder {
                 new com.reactnativecommunity.webview.RNCWebViewPackage(),
                 new com.rnimmersive.RNImmersivePackage(),
                 new com.zmxv.RNSound.RNSoundPackage(),
+                new com.swmansion.gesturehandler.react.RNGestureHandlerPackage(),
+                new RNDeviceInfo(),
                 new ReactPackageAdapter() {
                     @Override
                     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {

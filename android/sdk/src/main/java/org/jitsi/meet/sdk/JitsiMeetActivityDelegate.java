@@ -22,7 +22,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 
-import com.calendarevents.CalendarEventsPackage;
+// import com.calendarevents.CalendarEventsPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.bridge.Callback;
 import com.facebook.react.bridge.ReactContext;
@@ -170,19 +170,19 @@ public class JitsiMeetActivityDelegate {
         final int requestCode,
         final String[] permissions,
         final int[] grantResults) {
-        CalendarEventsPackage.onRequestPermissionsResult(
-            requestCode,
-            permissions,
-            grantResults);
-        permissionsCallback = new Callback() {
-            @Override
-            public void invoke(Object... args) {
-                if (permissionListener != null
-                        && permissionListener.onRequestPermissionsResult(requestCode, permissions, grantResults)) {
-                    permissionListener = null;
-                }
-            }
-        };
+        // CalendarEventsPackage.onRequestPermissionsResult(
+        //     requestCode,
+        //     permissions,
+        //     grantResults);
+        // permissionsCallback = new Callback() {
+        //     @Override
+        //     public void invoke(Object... args) {
+        //         if (permissionListener != null
+        //                 && permissionListener.onRequestPermissionsResult(requestCode, permissions, grantResults)) {
+        //             permissionListener = null;
+        //         }
+        //     }
+        // };
     }
 
     @TargetApi(Build.VERSION_CODES.M)
