@@ -32,6 +32,7 @@ import com.facebook.react.modules.core.DeviceEventManagerModule;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.soloader.SoLoader;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.reactcommunity.rnlocalize.RNLocalizePackage;
 import com.oney.WebRTCModule.RTCVideoViewManager;
 import com.oney.WebRTCModule.WebRTCModule;
 
@@ -198,6 +199,7 @@ class ReactInstanceManagerHolder {
                 new com.zmxv.RNSound.RNSoundPackage(),
                 new com.swmansion.gesturehandler.react.RNGestureHandlerPackage(),
                 new RNDeviceInfo(),
+                new RNLocalizePackage(),
                 new ReactPackageAdapter() {
                     @Override
                     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
