@@ -33,9 +33,9 @@ import com.facebook.react.uimanager.ViewManager;
 import com.facebook.soloader.SoLoader;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.reactcommunity.rnlocalize.RNLocalizePackage;
+import io.invertase.firebase.auth.RNFirebaseAuthPackage;
 import com.oney.WebRTCModule.RTCVideoViewManager;
 import com.oney.WebRTCModule.WebRTCModule;
-
 import org.webrtc.SoftwareVideoDecoderFactory;
 import org.webrtc.SoftwareVideoEncoderFactory;
 import org.webrtc.audio.AudioDeviceModule;
@@ -200,6 +200,8 @@ class ReactInstanceManagerHolder {
                 new com.swmansion.gesturehandler.react.RNGestureHandlerPackage(),
                 new RNDeviceInfo(),
                 new RNLocalizePackage(),
+                new io.invertase.firebase.RNFirebasePackage(),
+                new RNFirebaseAuthPackage(),
                 new ReactPackageAdapter() {
                     @Override
                     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
