@@ -34,6 +34,7 @@ import com.facebook.soloader.SoLoader;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.reactcommunity.rnlocalize.RNLocalizePackage;
 import io.invertase.firebase.auth.RNFirebaseAuthPackage;
+import com.RNFetchBlob.RNFetchBlobPackage;
 import com.oney.WebRTCModule.RTCVideoViewManager;
 import com.oney.WebRTCModule.WebRTCModule;
 import org.webrtc.SoftwareVideoDecoderFactory;
@@ -202,6 +203,7 @@ class ReactInstanceManagerHolder {
                 new RNLocalizePackage(),
                 new io.invertase.firebase.RNFirebasePackage(),
                 new RNFirebaseAuthPackage(),
+                new RNFetchBlobPackage(),
                 new ReactPackageAdapter() {
                     @Override
                     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {

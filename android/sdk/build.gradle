@@ -81,6 +81,7 @@ dependencies {
     implementation project(':react-native-device-info')
     implementation project(':react-native-localize')
     implementation project(':react-native-firebase')
+    implementation project(':rn-fetch-blob')
    
 
     testImplementation 'junit:junit:4.12'
