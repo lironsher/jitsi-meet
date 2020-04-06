@@ -40,7 +40,7 @@ import org.webrtc.SoftwareVideoDecoderFactory;
 import org.webrtc.SoftwareVideoEncoderFactory;
 import org.webrtc.audio.AudioDeviceModule;
 import org.webrtc.audio.JavaAudioDeviceModule;
-
+import com.RNFetchBlob.RNFetchBlobPackage; 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -201,6 +201,7 @@ class ReactInstanceManagerHolder {
                 new RNDeviceInfo(),
                 new RNLocalizePackage(),
                 new io.invertase.firebase.RNFirebasePackage(),
+                new RNFetchBlobPackage(),
                 new RNFirebaseAuthPackage(),
                 new ReactPackageAdapter() {
                     @Override

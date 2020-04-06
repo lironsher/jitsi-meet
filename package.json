@@ -96,7 +96,8 @@
     "util": "0.12.1",
     "uuid": "3.1.0",
     "windows-iana": "^3.1.0",
-    "xmldom": "0.1.27"
+    "xmldom": "0.1.27",
+    "react-native-fetch-blob": "https://github.com/lironsher/rn-fetch-blob"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
